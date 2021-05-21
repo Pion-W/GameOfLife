@@ -1,0 +1,8 @@
+Assignment 1 (Due May 23th 11:59PM) (30 points)
+
+Add the following featrures to main.py:
+
+1. Interactive initial condition (8 points)
+2. Discrete Update (10 points)
+3. Text showing total number of generations simulated (6 points)
+4. Reset button (6 points)
