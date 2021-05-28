@@ -16,7 +16,6 @@ pygame.display.set_caption("Game of Life")
 FPS = 60
 LIFENUM = WIDTH//20
 D = int(WIDTH/LIFENUM)
-#play = False
 
 #################################################
 # Classes and draw function
@@ -97,6 +96,13 @@ def initialize():
     num_gen = 0
     return allLife, play, num_gen
 
+def isEmpty(L):
+    for i in range(LIFENUM):
+        for j in range(LIFENUM):
+            if L[i][j].status == 1:
+                return False
+    return True
+
 def main():
     clock = pygame.time.Clock()
     allLife, play, num_gen = initialize()
@@ -131,7 +137,10 @@ def main():
                 
         drawAll(allLife, num_gen)
         if play:
-            allLife, num_gen = update(allLife, num_gen)
+            if isEmpty(allLife):
+                play = False
+            else:
+                allLife, num_gen = update(allLife, num_gen)
 
 if __name__ == "__main__":
     main()
