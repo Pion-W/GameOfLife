@@ -1,4 +1,4 @@
-Assignment 1 (Due May 23th 11:59PM) (30 points)
+Assignment 1 (Due May 23th 11:59PM) (30 points)                         Assignment Graded: 30/30
 
 Add the following featrures to main.py:
 
@@ -6,3 +6,10 @@ Add the following featrures to main.py:
 2. Discrete Update (10 points)
 3. Text showing total number of generations simulated (6 points)
 4. Reset button (6 points)
+
+Assignment 2 (Due July 10th 11:59PM) (30 points)
+
+Add the following featrures to main.py:
+
+1. Interactive dynamical FPS (e.g., slider, textbox) (10 points)
+2. Pattern storage. (20 points)

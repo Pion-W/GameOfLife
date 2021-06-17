@@ -57,7 +57,7 @@ def update(tempallLife, num_gen):
     return allLife, num_gen
 
 def draw_text(pos, text, text_size, color, isBold):
-    font = pygame.font.SysFont('arial', text_size, isBold)
+    font = pygame.font.SysFont('liberationsans', text_size, isBold)
     text = font.render(text, 1, color)
     WIN.blit(text, pos)
 
@@ -71,7 +71,7 @@ def draw_instructions_text():
     draw_text((WIDTH + 3*BUFFER/30, 17*HEIGHT/50 + 10), "Pause the game", 20, BLACK, False)
     draw_text((WIDTH + BUFFER/30, 22*HEIGHT/50), "Press the R key to", 20, BLACK, False)
     draw_text((WIDTH + 3*BUFFER/30, 23*HEIGHT/50 + 10), "Reset the game", 20, BLACK, False)
-    draw_text((WIDTH + BUFFER/30, 28*HEIGHT/50), "Press the left Arrow key to", 20, BLACK, False)
+    draw_text((WIDTH + BUFFER/30, 28*HEIGHT/50), "Press the right Arrow key to", 20, BLACK, False)
     draw_text((WIDTH + 3*BUFFER/30, 29*HEIGHT/50 + 10), "Increment through a", 20, BLACK, False)
     draw_text((WIDTH + 3*BUFFER/30, 30*HEIGHT/50 + 20), "Generation", 20, BLACK, False)
     draw_text((WIDTH + BUFFER/30, 35*HEIGHT/50 + 20), "Number of Generations:", 20, BLACK, False)
